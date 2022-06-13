@@ -1,19 +1,25 @@
 ---
 bg: "owl.jpg"
 layout: page
-title: "About"
+title: "Контакты"
 crawlertitle: "Why and how this blog was created"
 permalink: /about/
-summary: "About this blog"
+summary: "Общество с Ограниченной Ответственностью БРИОН"
 active: about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+# Наши реквизиты
+### Наименование
+ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "БРИОН"
 
-You can find the source code for the Jekyll new theme at:
-{{site.twitter_username}} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+### Адрес
+УЛИЦА АНГАРСКАЯ, Д. 28, КОРП./СТ. 2, КВ./ОФ. 8, Г. МОСКВА
 
-You can find the source code for Jekyll at
-{{site.github_username}} /
-[jekyll](https://github.com/jekyll/jekyll)
+### ИНН
+7743376180
+
+### Телефон
++7 499 112 4305
+
+### Электронная почта
+info@brio-n.ru

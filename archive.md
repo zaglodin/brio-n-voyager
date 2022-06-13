@@ -2,9 +2,9 @@
 bg: "tag.jpg"
 layout: page
 permalink: /posts/
-title: "Archive"
-crawlertitle: "All articles"
-summary: "Posts about jekyll"
+title: "Лучший агент для ваших задач"
+crawlertitle: "Все записи"
+summary: "Мы сделаем это за вас"
 active: archive
 ---
 
