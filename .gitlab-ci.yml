@@ -18,16 +18,19 @@ stages:          # List of stages for jobs, and their order of execution
   - test
   - deploy
 
-image: ruby:2.7
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
+  image: ruby:2.7
   script:
     - echo "Compiling the code..."
     - gem install bundler
     - bundle install
     - bundle exec jekyll build
     - echo "Compile complete."
+  artifacts:
+    path:
+       - _site/
 
 unit-test-job:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
