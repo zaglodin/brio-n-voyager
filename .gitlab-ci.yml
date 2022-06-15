@@ -19,36 +19,36 @@ stages:          # List of stages for jobs, and their order of execution
   - test
   - deploy
 
-# variables: 
-#   IMAGE_NAME: zaglodin/brio-n-site
-#   IMAGE_TAG: jekill-voyager-0.0.1
+variables: 
+  IMAGE_NAME: zaglodin/brio-n-site
+  IMAGE_TAG: jekill-voyager-0.0.1
 
-# build-job:       # This job runs in the build stage, which runs first.
-#   stage: build
-#   image: ruby:2.7
-#   script:
-#     - echo "Compiling the code..."
-#     - gem install bundler
-#     - bundle install
-#     - bundle exec jekyll build
-#     - echo "Compile complete."
-#   artifacts:
-#     paths:
-#        - _site/
-#     expire_in: 1 week
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  image: ruby:2.7
+  script:
+    - echo "Compiling the code..."
+    - gem install bundler
+    - bundle install
+    - bundle exec jekyll build
+    - echo "Compile complete."
+  artifacts:
+    paths:
+       - _site/
+    expire_in: 1 week
 
-# build-docker-image:
-#   stage: image
-#   image: docker:20.10.17
-#   services:
-#     - docker:20.10.17-dind
-#   variables:
-#     DOCKER_TLSCERTDIR: "/certs"
-#   before_script:
-#     - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
-#   script:
-#     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
-#     - docker push $IMAGE_NAME:$IMAGE_TAG
+build-docker-image:
+  stage: image
+  image: docker:20.10.17
+  services:
+    - docker:20.10.17-dind
+  variables:
+    DOCKER_TLSCERTDIR: "/certs"
+  before_script:
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
+  script:
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - docker push $IMAGE_NAME:$IMAGE_TAG
 
 
 # unit-test-job:   # This job runs in the test stage.
