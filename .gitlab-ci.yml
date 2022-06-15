@@ -71,7 +71,7 @@ deploy-job:
     entrypoint: ['']
   script:
     - kubectl config get-contexts
-    - kubectl config use-context zaglodin/kubernetes-agent:dev-kub-agent
+    - kubectl config use-context /kubernetes-agent:dev-kub-agent
     - kubectl get pods
 # deploy-job:      # This job runs in the deploy stage.
 #   stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
