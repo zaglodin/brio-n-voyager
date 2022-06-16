@@ -15,7 +15,7 @@
 
 stages:          # List of stages for jobs, and their order of execution
   - build
-  - image
+  - package
   - test
   - deploy
 
@@ -38,7 +38,7 @@ build-job:       # This job runs in the build stage, which runs first.
     expire_in: 1 week
 
 build-docker-image:
-  stage: image
+  stage: package
   image: docker:20.10.17
   services:
     - docker:20.10.17-dind

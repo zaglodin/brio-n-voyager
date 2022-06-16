@@ -3,7 +3,7 @@ bg: "tag.jpg"
 layout: page
 permalink: /posts/
 title: "Лучший агент для ваших задач"
-crawlertitle: "Все записи"
+crawlertitle: "ООО БРИОН"
 summary: "Мы сделаем это за вас"
 active: archive
 ---

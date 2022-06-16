@@ -2,7 +2,7 @@
 bg: "owl.jpg"
 layout: page
 title: "Контакты"
-crawlertitle: "Why and how this blog was created"
+crawlertitle: "ООО БРИОН"
 permalink: /about/
 summary: "Общество с Ограниченной Ответственностью БРИОН"
 active: about
