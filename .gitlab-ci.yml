@@ -78,3 +78,6 @@ deploy-job:
 #   script:
 #     - echo "Deploying application..."
 #     - echo "Application successfully deployed."
+
+# script:
+  #  - sed -i "$|latest|${IMAGE_TAG}|" deploy.yaml
